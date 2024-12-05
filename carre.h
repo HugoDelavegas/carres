@@ -6,7 +6,9 @@
 //public:
 
 private:
-	
+	int sx;
+	int sy;
+	int cote;
 };
 
 MyClass::MyClass()
