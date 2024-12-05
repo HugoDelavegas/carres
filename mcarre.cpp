@@ -9,6 +9,10 @@ void main()
 	int long_cote;
 	char direction;
 	int saut;
+	unsigned int dx;
+	unsigned int dy;
+	dx = 0;
+	dy = 0;
 	saut = 0;
 	dec_hori = 0;
 	dec_vert = 0;
@@ -25,6 +29,10 @@ void main()
 	cin >> direction;
 	cout << "Selectionner le saut a effectuer: ";
 	cin >> saut;
+	cout << "Veuillez selectionner dx: ";
+	cin >> dx;
+	cout << "Veuillez selectionner dy: ";
+	cin >> dy;
 
 	Carre1.Setsx(dec_hori);
 	Carre1.Setsy(dec_vert);
@@ -38,5 +46,10 @@ void main()
 	cout << "\n-La longueur du cote choisi est : " << Carre1.Getcote();
 	
 	Carre1.Deplacer(direction, saut);
-	cout << "\nSx=" << Carre1.Getsx() << "\nSy=" << Carre1.Getsy() << "\nCote=" << Carre1.Getcote();
+	cout <<"\n-Programme Deplacement" << "\nSx=" << Carre1.Getsx() << "\nSy=" << Carre1.Getsy() << "\nCote=" << Carre1.Getcote();
+	Carre1.Setsx(dec_hori);
+	Carre1.Setsy(dec_vert);
+	Carre1.Deplacer(dx, dy);
+	cout <<"\n-Programme Surcharge" << "\nSx=" << Carre1.Getsx() << "\nSy=" << Carre1.Getsy() << "\nCote=" << Carre1.Getcote();
+
 }
