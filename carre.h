@@ -16,6 +16,7 @@ public:
 		int Getsx();
 		int Getsy();
 		int Getcote();
+		void Deplacer(char direction, int saut);
 		
 };
 

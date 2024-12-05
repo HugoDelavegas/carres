@@ -7,6 +7,9 @@ void main()
 	int dec_hori;
 	int dec_vert;
 	int long_cote;
+	char direction;
+	int saut;
+	saut = 0;
 	dec_hori = 0;
 	dec_vert = 0;
 	long_cote = 0;
@@ -18,6 +21,10 @@ void main()
 	cin >> dec_vert;
 	cout << "Veuillez selectionner la longueur du cote: ";
 	cin >> long_cote;
+	cout << "Selectionner qu'elle direction vous souhaitez N/S/E/O: ";
+	cin >> direction;
+	cout << "Selectionner le saut a effectuer: ";
+	cin >> saut;
 
 	Carre1.Setsx(dec_hori);
 	Carre1.Setsy(dec_vert);
@@ -29,4 +36,7 @@ void main()
 	cout <<"\n-La longueur horizontal choisi est : "<< Carre1.Getsx();
 	cout << "\n-La longueur vertical choisi est : " << Carre1.Getsy();
 	cout << "\n-La longueur du cote choisi est : " << Carre1.Getcote();
+	
+	Carre1.Deplacer(direction, saut);
+	cout << "\nSx=" << Carre1.Getsx() << "\nSy=" << Carre1.Getsy() << "\nCote=" << Carre1.Getcote();
 }

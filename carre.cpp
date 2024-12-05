@@ -36,3 +36,18 @@ int CCarre::Getcote()
 	
 	return cote;
 }
+
+void CCarre::Deplacer(char direction, int saut)
+{
+	if (direction == 'n')
+		sy = saut;
+	else if (direction == 's')
+		sy = saut;
+	else if (direction == 'e')
+		sx = saut;
+	else if (direction == 'o')
+		sx = saut;
+	
+
+	
+}
