@@ -19,3 +19,20 @@ void CCarre::Afficher()
 	cout << "\n-La longueur vertical choisi est : "<< sy;
 	cout << "\n-La longueur du cote choisi est :"<< cote;
 }
+
+int CCarre::Getsx()
+{
+	
+	return sx;
+}
+
+int CCarre::Getsy()
+{
+	return sy;
+}
+
+int CCarre::Getcote()
+{
+	
+	return cote;
+}

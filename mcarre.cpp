@@ -22,6 +22,11 @@ void main()
 	Carre1.Setsx(dec_hori);
 	Carre1.Setsy(dec_vert);
 	Carre1.Setcote(long_cote);
-	Carre1.Afficher();
-
+	//Carre1.Afficher();
+	Carre1.Getsx();
+	Carre1.Getsy();
+	Carre1.Getcote();
+	cout <<"\n-La longueur horizontal choisi est : "<< Carre1.Getsx();
+	cout << "\n-La longueur vertical choisi est : " << Carre1.Getsy();
+	cout << "\n-La longueur du cote choisi est : " << Carre1.Getcote();
 }
