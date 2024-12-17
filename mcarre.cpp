@@ -1,5 +1,6 @@
 #include "carre.h"
 #include <iostream>
+#include<stdio.h>
 using namespace std;
 void main()
 {
@@ -11,12 +12,17 @@ void main()
 	int saut;
 	unsigned int dx;
 	unsigned int dy;
+	CCarre *Carre2 = new CCarre;
 	dx = 0;
 	dy = 0;
 	saut = 0;
 	dec_hori = 0;
 	dec_vert = 0;
 	long_cote = 0;
+	Carre[0];
+	Carre[1];
+	Carre[2];
+	Carre[3];
 
 	cout << "\t\t\t\t\t\t----Bonjour artisan----";
 	cout << "\n\nVeuillez selectionner la longueur du decalage horizontal: ";
@@ -33,7 +39,9 @@ void main()
 	cin >> dx;
 	cout << "Veuillez selectionner dy: ";
 	cin >> dy;
-
+	Carre2->Setsx(dec_hori);
+	Carre2->Setsy(dec_vert);
+	Carre2->Setcote(long_cote);
 	Carre[0].Setsx(dec_hori);
 	Carre[0].Setsy(dec_vert);
 	Carre[0].Setcote(long_cote);
@@ -44,7 +52,6 @@ void main()
 	cout <<"\n-La longueur horizontal choisi est : "<< Carre[0].Getsx();
 	cout << "\n-La longueur vertical choisi est : " << Carre[0].Getsy();
 	cout << "\n-La longueur du cote choisi est : " << Carre[0].Getcote();
-	
 	Carre[0].Deplacer(direction, saut);
 	cout <<"\n-Programme Carre 1" << "\nSx=" << Carre[0].Getsx() << "\nSy=" << Carre[0].Getsy() << "\nCote=" << Carre[0].Getcote();
 	Carre[1].Setsx(dec_hori);
@@ -62,5 +69,7 @@ void main()
 	Carre[3].Setcote(long_cote);
 	Carre[3].Deplacer('o', saut+3-8);
 	cout << "\n-Programme Carre 4" << "\nSx=" << Carre[3].Getsx() << "\nSy=" << Carre[3].Getsy() << "\nCote=" << Carre[3].Getcote();
-
+	Carre2->Deplacer('o', saut + 2 - 4);
+	cout << "\n-Programme Carre 5" << "\nSx=" << Carre2->Getsx() << "\nSy=" << Carre2->Getsy() << "\nCote=" << Carre2->Getcote();
+	delete Carre2;
 }

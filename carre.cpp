@@ -1,6 +1,18 @@
 #include "carre.h"
 #include <iostream>
 using namespace std;
+CCarre::CCarre()
+{
+	sx = 0;
+	sy = 0;
+	cote = 0;
+}
+CCarre::CCarre(int x,int y ,int ct)
+{
+	sx = x;
+	sy = y;
+	cote = ct;
+}
 void CCarre::Setsx(int sx1)
 {
 	sx = sx1;
