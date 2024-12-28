@@ -1,5 +1,10 @@
 #pragma once
-
+/// Nom Fichier carre.h 
+/// Création d'un carré en implémentant des class… 
+/// Utilise des class  
+/// @Nom :Leroux Erwan
+/// @version 0.1 - Visual Studio 2019 
+/// @date 28/12/2024
 
 class CCarre
 {
